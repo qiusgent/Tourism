@@ -1,0 +1,23 @@
+/* pages/index/video/video.wxss */
+page{
+  height: 100vh;
+}
+video{
+  width: 100vw;
+  z-index: 101;
+}
+input{
+  border: 1px solid #ccc;
+  margin: 20rpx;
+}
+.video-title {
+  font-size: 1.2941176470588236rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: unset;
+  text-align: center;
+}
+.page{
+  position: relative;
+}

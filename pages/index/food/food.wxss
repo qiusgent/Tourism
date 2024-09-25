@@ -1,0 +1,41 @@
+/* pages/index/food/food.wxss */
+/* .animation-view{
+  width: 25vh;
+  height: 25vh;
+  background-color: lawngreen;
+  margin-top: 25vh;
+  margin-left: 10vh;
+} */
+.rec-inner{
+  display: flex;
+  flex-wrap: wrap; /*可换行*/
+  margin: 2vh 20rpx;
+}
+
+.rec-list{ /*X轴偏移量   Y轴偏移量   阴影模糊半径   阴影扩展半径   阴影颜色   投影方式  */
+  box-shadow: 0 8rpx 17rpx 0 rgba(7,17,27, 0.2);
+  margin: 10rpx 25rpx;
+  border-radius: 18rpx;
+  margin-bottom: 30rpx;
+  width: 30vw;
+  height: 18vh;
+  background: #fff;
+  padding: 1.1vh 0   ;
+  flex: 1;
+  color:#000 ;
+}
+.rec-title{
+  margin-top: -0.5vh;
+  font-size: 30rpx;
+  color: rgb(255, 255, 255);
+  font-family: STXinwei;
+  text-align: center;
+  font-size: larger;
+}
+.rec-list>image{
+  width: 38vw;
+  height: 13vh;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  margin:7rpx 13rpx;
+}

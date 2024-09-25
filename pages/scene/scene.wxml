@@ -1,0 +1,35 @@
+<!--pages/scene/scene.wxml-->
+<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" bindtap="loading">
+  <form class="weui-search-bar__form" aria-role="combobox" aria-haspopup="true" aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}" aria-owns="searchResult">
+    <label class="weui-search-bar__label" bindtap="showInput">
+      <i class="weui-icon-search" style="margin-left: -31vh;"></i>
+      <span class="weui-search-bar__text" style="margin-left: -12vh;">输入搜索的关键字</span>
+    </label>
+  </form>
+</view>
+<navigator class="weui-btn weui-btn_primary" aria-role="button" url="javascript:" bindtap="loading">搜索</navigator>
+
+<swiper duration="500" interval="5000" indicator-dots='true' circular indicator-color="rgba(255, 255, 255, 0.43)" indicator-active-color='#fff'>
+  <swiper-item wx:for="{{tabList}}" wx:for-item="tabList" wx:key="id">
+    <view class="bg-group">
+      <view class="poster-bg" style="background-image:url('{{tabList.src}}');"></view>
+      <view class="image-wrap">
+        <image src="{{tabList.src}}" mode="aspectFill" class="img"  />
+      </view>
+      <view class="a" bindtap="map">路线导航</view>
+    <view aria-hidden="{{iosDialog2 || androidDialog2 ? true : false}}" class="page__bd page__bd_spacing">
+      <a class=" weui-btn_default" bindtap="openIOS2">点击查看简介</a>
+    </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true" class="fadeIn" wx:if="{{iosDialog2}}" >
+      <view class="weui-mask"></view>
+      <view class="weui-dialog">
+        <view class="weui-dialog__bd" >{{tabList.title}}</view>
+        <view class="weui-dialog__ft">
+          <view aria-role="button" class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">知道了</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  
+</swiper>

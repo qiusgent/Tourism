@@ -1,0 +1,45 @@
+<!--pages/index/food/food.wxml-->
+<!-- <view animation="{{animationData}}" class="animation-view"></view> -->
+<view class="rec-inner"  animation="{{animationData}}">
+  <view class="rec-list" style="background-color: #25bcb5;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdfzximg01.dftoutiao.com%2Fminimodify%2F20210724%2F3750x2500_60fb8790f0b5c.jpeg&refer=http%3A%2F%2Fdfzximg01.dftoutiao.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656951446&t=e55adb38b594494d21d89a6e69da86d8" mode="aspectFill"></image>
+    <view class="rec-title">煎饼馃子</view>
+  </view>
+  <view class="rec-list" style="background-color: #529eec;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181109%2Ff96f249e2f5b42b6823431aba579b67e.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656951844&t=0a8ecb1dc4760a54d7ed9212ffb02cbd" mode="aspectFill"></image>
+    <view class="rec-title">嘎巴菜</view>
+  </view>
+  <view class="rec-list" style="background-color: #6d3fb9;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F0ff41bd5ad6eddc451da770ff191a1fd5266d11695a6&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952038&t=76d5702464c3eace712d7fc9af84f551" mode="aspectFill"></image>
+    <view class="rec-title">面茶</view>
+  </view>
+  <view class="rec-list"  style="background-color: #9f30b2;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F8694a4c27d1ed21b0ef4422dcc25cac451da80cb91ea&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952263&t=167beabbc49907fff5a6a13262ea1666" mode="aspectFill"></image>
+    <view class="rec-title">卷圈</view>
+  </view>
+  <view class="rec-list" style="background-color: #e1419b;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinakd10100%2F270%2Fw640h430%2F20220207%2F5401-e55f5a62341fe4d2756d4a85330462b1.png&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952364&t=36647760557b134053820784a5a9e18b" mode="aspectFill"></image>
+    <view class="rec-title">炸糕</view>
+  </view>
+  <view class="rec-list" style="background-color: #a56a42;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0518%252F6d23d8bcp00qtaqpl00brc000ik00bcm.png%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952532&t=22bec361170c3d2bdc1655984ba17772" mode="aspectFill"></image>
+    <view class="rec-title">熟梨糕</view>
+  </view>
+  <view class="rec-list" style="background-color: #e65349;">
+    <image src="https://p5.itc.cn/images01/20201125/cc3d55fcf59d44e0afb74438d1f7d4b7.jpeg"></image>
+    <view class="rec-title">麻酱烧饼</view>
+  </view>
+  <view class="rec-list" style="background-color: #f47d21;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcontent.pic.tianqistatic.com%2Fcontent%2F20181215%2Fc0147567f24d32020105fed1c6b3851c.jpg&refer=http%3A%2F%2Fcontent.pic.tianqistatic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952769&t=91781cf16d6ce52d730f485e119c060c" mode="aspectFill"></image>
+    <view class="rec-title">水馅包子</view>
+  </view>
+  <view class="rec-list" style="background-color: #8dc641;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg20.360buyimg.com%2Fimgzone%2Fjfs%2Ft1%2F187235%2F40%2F17919%2F170291%2F6113decaE6bc104de%2F253b8ced53133b0a.jpg&refer=http%3A%2F%2Fimg20.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952834&t=d3e544213844c4674c6f461b565f122f" mode="aspectFill"></image>
+    <view class="rec-title">豆根糖</view>
+  </view>
+  <view class="rec-list" style="background-color: #2fbc49;">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.itc.cn%2Fq_70%2Fimages03%2F20220128%2F1ef0d4c06d1747729451886623bfc83d.jpeg&refer=http%3A%2F%2Fp0.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656952971&t=098993c12f4984ab7d32d1d42393a05a" mode="aspectFill"></image>
+    <view class="rec-title">糕干</view>
+  </view>
+ 
+</view>

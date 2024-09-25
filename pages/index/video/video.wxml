@@ -1,0 +1,9 @@
+<!--pages/index/video/video.wxml-->
+
+<!-- 视频资源地址      弹幕列表                  是否显示弹幕 弹幕按钮 是否显示默认播放控件   -->
+<view class="video-title">
+  中国天津｜文化与旅游宣传片
+</view>
+<video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+<input bindblur="bindInputBlur" />
+<button bindtap="bindSendDanmu">发送弹幕</button>

@@ -1,0 +1,102 @@
+/* pages/weather/weather.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.bg-image
+{ 
+  width : 100%;
+  position: fixed;  
+  z-index: -1;  
+}
+.father_box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* 上 */
+.top_box{
+  flex: 3;
+  background-color: #4f9cec;
+}
+.pm2_5{
+  display: flex;
+  color: white;
+  width: 25vw;
+  height: 5vh;
+  margin-left: 35rpx;
+  background-color:#79bfe0;
+  border-radius: 50rpx;
+  justify-content: center;
+  align-items: center;
+}
+.temperature{
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  font-size:100rpx;
+}
+.weather{
+  text-align: center;
+  color: white;
+  font-size:40rpx;
+  margin-bottom: 20rpx;
+}
+.wind{
+  text-align: center;
+  color: white;
+  font-size:40rpx;
+}
+.pm2_5_remark{
+  margin-top: 15%;
+  text-align: center;
+  color: white;
+  font-size:40rpx;
+}
+/* 下 */
+.bottom_box{
+  flex: 1;
+  background-color:white ;
+ 
+}
+.bottom_box_father{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: -5.5%;
+  margin-right: 10rpx;
+  box-sizing:content-box;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_left_left{
+  flex: 1;
+  margin-left: 30rpx;
+}
+.bottom_left_right{
+  flex: 1;
+}
+.bottom_right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_right_left{
+  flex: 1;
+  margin-left: 30rpx;
+}
+.icon{
+  width: 60rpx;
+}
+.bottom_right_right{
+  flex: 1;
+}

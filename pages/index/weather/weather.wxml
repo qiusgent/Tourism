@@ -1,0 +1,39 @@
+<!--pages/weather/weather.wxml-->
+<view class="father_box">
+  <!--上 -->
+  <view class="top_box">
+    <!-- 背景图片 -->
+    <!-- <image class="bg-image" mode="widthFix" src="../../images/l.jpg"></image> -->
+    <view class="pm2_5">{{city}}:{{pm2_5}}</view>
+    <view class="temperature">{{weatherArray[0].temperature_curr}}</view>
+    <view class="weather">{{weatherArray[0].weather}}</view>
+    <view class="wind">{{weatherArray[0].wind}}</view>
+    <view class="pm2_5_remark">{{pm2_5_remark}}</view>
+  </view>
+  <!-- 下 -->
+  <view class="bottom_box">
+    <view class="bottom_box_father">
+      <view class="bottom_left">
+        <view class="bottom_left_left">
+          <view style="margin-bottom: 10rpx;">今天</view>
+          <view>{{weatherArray[0].weather}}</view>
+        </view>
+        <view class="bottom_left_right">
+          <view style="margin-bottom: 10rpx;">{{weatherArray[0].temperature}}</view>
+          <view><image class="icon" mode="widthFix" src="{{weatherArray[0].weather_icon}}"></image></view>
+        </view>
+      </view>
+      <view style="height: 120rpx;width: 3rpx;background-color: #b9b9b9;"></view>
+      <view class="bottom_right">
+        <view class="bottom_right_left">
+          <view style="margin-bottom: 10rpx;">明天</view>
+          <view>{{weatherArray[1].weather}}</view>
+        </view>
+        <view class="bottom_right_right">
+          <view style="margin-bottom: 10rpx;">{{weatherArray[1].temperature}}</view>
+          <view><image class="icon" mode="widthFix" src="{{weatherArray[1].weather_icon}}"></image></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="page" >
+  <view class="weui-article">
+    <view aria-role="heading" aria-level="4" class="weui-article__h1">天津市十大旅游景点</view>
+</view>
+<view class="rec-list" wx:for="{{recList}}" wx:key="user" >
+  <!--列表渲染 -->
+  <view class="rec-title">{{item.title}}</view>
+  <image src="{{item.src}}" mode="aspectFill"></image>
+</view>
+  <view class="page__bd page__bd_spacing">
+  <view class="weui-footer">
+    <view class="weui-footer__text">ps：排名有先后但仅供参考</view>
+  </view>
+</view>
+</view>

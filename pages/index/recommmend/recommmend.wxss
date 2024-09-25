@@ -1,0 +1,41 @@
+/* pages/index/recommmend/recommmend.wxss */
+.weui-footer{margin-bottom:50px}.weui-footer_fixed-bottom{margin-bottom:0}
+.page{
+  background-color: #ffffff;
+}
+.weui-article__h1 {
+  font-size: 1.2941176470588236rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: unset;
+}
+.weui-article{
+  padding: 32px 0 0 0;
+}
+.rec-list{ /*X轴偏移量   Y轴偏移量   阴影模糊半径   阴影扩展半径   阴影颜色   投影方式  */
+  box-shadow: 0 8rpx 17rpx 0 rgba(7,17,27, 0.1);
+  margin: 10rpx 25rpx;
+  padding: 20rpx;
+  border-radius: 18rpx;
+  margin-bottom: 35rpx;
+  background: #fff;
+}
+.rec-title{
+  font-size: 30rpx;
+  color: rgb(240, 68, 68);
+  font-family: STXinwei;
+}
+.rec-list image{
+  width: 100%;
+  margin-top: 20rpx;
+  height: 26vh;
+  border-radius: 15rpx;
+}
+.page__bd {
+  padding-bottom: 20px;
+}
+.weui-footer {
+  margin-bottom: 0px;
+
+}

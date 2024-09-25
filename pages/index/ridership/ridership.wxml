@@ -1,0 +1,124 @@
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津古文化街</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="http://p0.meituan.net/hoteltdc/43572d0c9c332139c5296bb6e79e8941_1_b8eb8f1aa8e3ef7a_1_/Yhl5UN79G/U1HyTTuXRVXJQPuUrPCWSoMbNCTQUUUIkPmKpHXPPfTNJG3So0jKU92OgKKauV45i2JwDo8jpRLf0ja2mSTDl7JAK+pWFOFwXbHw2TKN7jvIg8V+USnMn" object-fit="fill" bindtap="open" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view class="list-tel" bindtap="openIOS2">
+      <view><text>客流预测</text></view>
+    </view>
+  </navigator>
+  <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+    <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAAA</text></text>
+    <text class="weui-media-box__title">人均：<text class="media-box__title2">69元</text></text>
+    <text class="weui-media-box__title">开放时间：09:00-20:00</text>
+    <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市南开区，南门在水阁大街与古文化街交口，北门在通北路与古文化街交口</text></view>
+  </view>
+
+
+</view>
+
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">盘山</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p0.meituan.net/hotel/eebb1541dd304e598dc19b4b06276f251100188.png@275w_156h_1e_1c" object-fit="fill" bindtap="open1" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view class="list-tel" bindtap="openIOS2">
+      <text>客流预测</text>
+    </view>
+  </navigator>
+  <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+    <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAAA</text></text>
+    <text class="weui-media-box__title">人均：<text class="media-box__title2">222元</text></text>
+    <text class="weui-media-box__title">开放时间：08:00-18:00</text>
+    <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市蓟州区砖蓟路</text></view>
+  </view>
+ 
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津之眼</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0609%252Fcc8bb5e3j00qufd2q00f5c000u000k4m.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656494110&t=6370ea0797b81812eef2001a0d3f7e1e" object-fit="fill" bindtap="open2" class="service-image" mode="aspectFill"></image>
+    </view>
+
+    <view class="list-tel" bindtap="openIOS2">
+      <text>客流预测</text>
+    </view>
+  </navigator>
+  <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+    <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+    <text class="weui-media-box__title">人均：<text class="media-box__title2">84元</text></text>
+    <text class="weui-media-box__title">开放时间：9:30-21:30</text>
+    <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市河北区李公祠大街与五马路交口的永乐桥上</text></view>
+  </view>
+
+ 
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">方特欢乐世界</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p0.meituan.net/travel/4687fa7d910be48490149512e318a3b3357773.png@275w_156h_1e_1c" object-fit="fill" bindtap="open3" class="service-image" mode="aspectFill"></image>
+    </view>
+
+    <view class="list-tel" bindtap="openIOS2">
+      <text>客流预测</text>
+    </view>
+  </navigator>
+  <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+    <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+    <text class="weui-media-box__title">人均：<text class="media-box__title2">393元</text></text>
+    <text class="weui-media-box__title">开放时间：9:30-17:30</text>
+    <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市滨海新区中新生态城中生大道4888号</text></view>
+  </view>
+
+
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津欢乐谷</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p1.meituan.net/tdctraveldark/3a26401a487c8840af164ae6e2f4bc814029566.jpg@275w_156h_1e_1c" object-fit="fill" bindtap="open4" class="service-image" mode="aspectFill"></image>
+    </view>
+
+    <view class="list-tel" bindtap="openIOS2">
+      <text>客流预测</text>
+    </view>
+  </navigator>
+  <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+    <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+    <text class="weui-media-box__title">人均：<text class="media-box__title2">316元</text></text>
+    <text class="weui-media-box__title">开放时间：08:30-21:30,17:00-21:30</text>
+    <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市东丽区S329(金钟线)</text></view>
+  </view>
+
+  
+</view>
+
+<view aria-role="dialog" aria-modal="true" class="fadeIn" wx:if="{{iosDialog2}}">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog">
+      <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchcanvas" ></canvas>
+      <view class="canvas1_button" bindtap="canvas1_click">
+        <text style="color:{{textcolor1}}" class="canvas1_text">图表一</text>
+      </view>
+      <view class="canvas2_button" bindtap="canvas2_click">
+        <text style="color:{{textcolor2}}" class="canvas2_text">图表二</text>
+      </view>
+      <view class="weui-dialog__ft">
+        <view aria-role="button" class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">知道了</view>
+      </view>
+    </view>
+  </view>

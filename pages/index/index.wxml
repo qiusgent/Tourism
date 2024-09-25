@@ -1,0 +1,269 @@
+<view class="page__bd">
+  <view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+    <form class="weui-search-bar__form" aria-role="combobox" aria-haspopup="true" aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}" aria-owns="searchResult">
+      <label class="weui-search-bar__label" bindtap="showInput">
+        <i class="weui-icon-search" style="margin-left: 36vh;"></i>
+      </label>
+    </form>
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker">
+    {{array[index]}}<image src="/images/triangle.png" mode="widthFix" style="width: 16rpx;" class='picker-image'></image>
+  </picker>
+  <swiper class="a" autoplay="true" interval='5000' vertical='true' circular='true' bindtap="showInput">
+    <swiper-item>
+      <view>天津之眼</view>
+    </swiper-item>
+    <swiper-item>
+      <view>意大利风景区</view>
+    </swiper-item>
+    <swiper-item>
+      <view>五大道文化旅游区</view>
+    </swiper-item>
+    <swiper-item>
+      <view>解放桥</view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="swiper-wrap" bindtap="video">
+  <swiper autoplay="true" duration="500" interval="5000" indicator-dots='true' circular indicator-color="rgba(255, 255, 255, 0.43)" indicator-active-color='#fff'>
+    <swiper-item wx:for="{{imgSrcs}}" wx:for-item="imgItem" wx:key="id">
+      <image src="{{imgItem.src}}" class="image__swiper"  mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="content-info-list">
+  <view class="list-inner">
+    <view class="list-item " bindtap="plan">
+      <image src="/images/trip.png" ></image>
+      <view>出行规划</view>
+    </view>
+    <view class="list-item" bindtap="recommend">
+      <image src="/images/recommend.png"></image>
+      <view>专属推荐</view>
+    </view>
+    <view class="list-item" bindtap="cheat">
+      <image src="/images/consumption.png"></image>
+      <view>消费预警</view>
+    </view>
+    <view class="list-item" bindtap="ridership">
+      <image src="/images/flow.png" ></image>
+      <view>景区客流</view>
+    </view>
+    <view class="list-item" bindtap="weather">
+      <image src="/images/forecast.png"></image>
+      <view>天气预报</view>
+    </view>
+    <view class="list-item" bindtap="food">
+      <image src="/images/food.png"></image>
+      <view>天津美食</view>
+    </view>
+
+  </view>
+</view>
+<view class="tabList-all">
+  <view class="tabList-title"><text>| </text>热门景点</view>
+  <scroll-view scroll-x="true">
+    <view class="tabList" bindtap="tabList">
+      <view wx:for="{{tabList}}" wx:for-item="tabList" wx:key="id">
+        <image src="{{tabList.src}}" class="image-tabList"  mode="aspectFill" id="{{tabList.id}}"></image>
+        <view class="text-tabList" id="{{tabList.id}}">{{tabList.title}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class="page-bottom">
+  <view class="weui-tab">
+    <view class="weui-navbar">
+      <block wx:for-items="{{tabs}}" wx:key="index">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style=" transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+    <view class="weui-tab__panel">
+      <view class="" hidden="{{activeIndex != 0}}">
+        <view class="weui-panel weui-panel_access">
+          <view class="weui-panel__bd" bindtap="haveSave">
+            <view class="weui-panel__hd" >陆壹捌餐厅（五大道店）</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/biztone/42205013_1629793288772.jpeg@380w_214h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">天津菜</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.5分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">和平区新华路226号03幢1层29（小柠快跑旁边）（近大理道）</text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave1">
+            <view class="weui-panel__hd" >意荟Cielo·西餐厅</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/msmerchant/027cf5f8dcef5e440e0f8ee0ece635f0614385.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">自助</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.4分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">和平区赤峰道138号天津现代城四季酒店9楼</text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick1?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave2">
+            <view class="weui-panel__hd" >醉山城重庆老火锅（咸水沽店）</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="	https://p0.meituan.net/msmerchant/91530142c616efa48b80a778c8bbc689132323.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">火锅</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.5分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">津南区月牙河西路左岸名邸底商8-5</text></view>
+              </view>
+              <view class="choucang" >
+                <image class="save " src="{{isClick2?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+          <view class="weui-panel__ft">
+            <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="javascript:">
+              <text class="weui-cell__bd">查看更多</text>
+              <text class="weui-cell__ft"></text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+
+      <view class="" hidden="{{activeIndex != 1}}">
+        <view class="weui-panel weui-panel_access">
+          <view class="weui-panel__bd" bindtap="haveSave">
+            <view class="weui-panel__hd" >莓蜜草莓采摘庄园基地</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p0.meituan.net/merchantpic/1dbd2bf165a15967cb558198fa583d83_1_b8eb8f1aa8e3ef7a_1_P1inCoRCNQduwa55iYKyW2FwRb50PmsLtXE3QqFnHqxDu5KmTthAvoaLcK0sLIolxev%2BURWPivBwLzJxi1ltHNQ91y98K40272bki4IuPJgIXdyaoxJFJ4AnkyuF2gXp" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">采摘/农家乐</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">5分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">西青区大寺村荣乌高速西侧辅路九策大厦南行300米 </text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave1">
+            <view class="weui-panel__hd" >何必在山林（梅江店）</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/joymerchant/75de5e432eae99658d0bd5bf400aecb0--254450936.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">茶馆</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3"> 河西区珠江道59号月坛文创中心后院G3-G8馆（近全季酒店）</text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick1?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave2">
+            <view class="weui-panel__hd" >墅外桃源·户外野营</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/merchantpic/28ee1d71b502a882ef4a7dcb198dda04367710.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">类型：<text  class="media-box__title1">团建拓展</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">3.2分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">北辰区津霸线与外环线交叉口西南200米</text></view>
+              </view>
+              <view class="choucang" >
+                <image class="save " src="{{isClick2?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+          <view class="weui-panel__ft">
+            <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="javascript:">
+              <text class="weui-cell__bd">查看更多</text>
+              <text class="weui-cell__ft"></text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      
+      <view class="" hidden="{{activeIndex != 2}}">
+        <view class="weui-panel weui-panel_access">
+          <view class="weui-panel__bd" bindtap="haveSave">
+            <view class="weui-panel__hd" >天津丽思卡尔顿酒店</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/tdchoteldark/6f1a44e9e7eda94cee51d4f2ca4e84d0155067.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">星级：<text  class="media-box__title1">5 </text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.6分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3"> 和平区大沽北路167号</text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave1">
+            <view class="weui-panel__hd" >天津水晶宫饭店</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p1.meituan.net/dnaimgdark/799a7b5a1e71772b68b54177fd5a84f23978376.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">星级：<text  class="media-box__title1">4</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.9分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">河西区友谊路28号</text></view>
+              </view>
+              <view class="choucang">
+                <image class="save " src="{{isClick1?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+
+          <view class="weui-panel__bd" bindtap="haveSave2">
+            <view class="weui-panel__hd" >广川大酒店</view>
+            <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+              <view aria-hidden="true" class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="https://p0.meituan.net/dnaimgdark/e1ccec199af5117554af7a13f831e2572922617.jpg@275w_156h_1e_1c" ></image>
+              </view>
+              <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+                <text class="weui-media-box__title">星级：<text  class="media-box__title1">3</text></text>
+                <text class="weui-media-box__title">评分：<text class="media-box__title2">4.5分</text></text>
+                <view class="weui-media-box__title">地址：<text class="media-box__title3">津南区咸水沽镇南环路99号</text></view>
+              </view>
+              <view class="choucang" >
+                <image class="save " src="{{isClick2?'/images/heart_s.png':'/images/heart.png'}}" ></image>               
+              </view>
+            </navigator>
+          </view>
+          <view class="weui-panel__ft">
+            <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="javascript:">
+              <text class="weui-cell__bd">查看更多</text>
+              <text class="weui-cell__ft"></text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

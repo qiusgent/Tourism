@@ -1,0 +1,82 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/search/search",
+        "pages/index/recommmend/recommmend",
+        "pages/index/plan/plan",
+        "pages/index/food/food",
+        "pages/index/video/video",
+        "pages/index/weather/weather",
+        "pages/index/cheat/cheat",
+        "pages/index/ridership/ridership",
+        "pages/scene/scene",
+        "pages/map/map",
+        "pages/service/service",
+        "pages/my/my",
+        "pages/my/detail/detail",
+        "pages/my/question/question"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#4f9cec",
+        "navigationBarTitleText": "🧳智慧旅游",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "tabBar": {
+      "color": "#8a8a8a",
+      "selectedColor": "#4f9cec",
+      "borderStyle": "black",
+      "list": [
+          {
+              "pagePath": "pages/index/index",
+              "text": "首页",
+              "iconPath": "images/index.png",
+              "selectedIconPath": "images/index_s.png"
+          },
+          {
+              "pagePath": "pages/scene/scene",
+              "text": "景点",
+              "iconPath": "images/scene.png",
+              "selectedIconPath": "images/scene_s.png"
+          },
+          {
+            "pagePath": "pages/map/map",
+            "text": "出行",
+            "iconPath": "images/map.png",
+            "selectedIconPath": "images/map_s.png"
+        },
+          {
+            "pagePath": "pages/service/service",
+            "text": "服务",
+            "iconPath": "images/service.png",
+            "selectedIconPath": "images/service_s.png"
+        },
+          {
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/my_s.png"
+        }
+      ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    },
+    "citySelector": {
+      "version": "1.0.2",
+      "provider": "wx63ffb7b7894e99ae"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
+  
+
+}

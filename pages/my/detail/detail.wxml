@@ -1,0 +1,50 @@
+<view class="avatar">
+  <image src="{{imgUrl}}" mode="aspectFill" bindtap="changeAvatar"></image>
+</view>
+<view class="content">
+  <view class="content1">
+    <view>昵称：</view>
+    <!-- 指定 placeholder(占位符)的样式类 -->
+    <input name="name" placeholder-class="phcolor" placeholder="小乖" bindblur="nameChange" />
+  </view>
+  <view class="content1">
+    <view>学校：</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="school-picker">{{array[index]}}
+    </picker>
+  </view>
+  <view class="content1">
+    <view>专业：</view>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" class="school-picker">{{array1[index1]}}
+    </picker>
+  </view>
+  <view class="content1">
+    <view>班级：</view>
+    <input name="phone" placeholder-class="phcolor" placeholder="应用S20-9班"  />
+  </view>
+  <view class="content1">
+    <view>学号：</view>
+    <input name="phone" placeholder-class="phcolor" placeholder="10"  />
+  </view>
+  <view class="content1">
+    <view>电话：</view>
+    <input name="phone" placeholder-class="phcolor" placeholder="输入您的手机号码" bindblur="phoneChange" />
+  </view>
+  <view class="content1">
+    <view>生日：</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" >
+               {{date}}
+            </picker>
+  </view>
+  <view class="content1">
+    <view>职业：</view>
+    <input name="wish" placeholder-class="phcolor" placeholder="在校学生" />
+  </view> 
+</view>
+<a class="weui-btn weui-btn_default" bindtap="openToast">修改</a>
+  <view aria-role="alert" class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+			<view class="weui-toast__content">修改成功</view>
+		</view>
+	</view>

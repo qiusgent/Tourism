@@ -1,0 +1,157 @@
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津古文化街</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="http://p0.meituan.net/hoteltdc/43572d0c9c332139c5296bb6e79e8941_1_b8eb8f1aa8e3ef7a_1_/Yhl5UN79G/U1HyTTuXRVXJQPuUrPCWSoMbNCTQUUUIkPmKpHXPPfTNJG3So0jKU92OgKKauV45i2JwDo8jpRLf0ja2mSTDl7JAK+pWFOFwXbHw2TKN7jvIg8V+USnMn" object-fit="fill" bindtap="open" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+      <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAAA</text></text>
+      <text class="weui-media-box__title">人均：<text class="media-box__title2">69元</text></text>
+      <text class="weui-media-box__title">开放时间：09:00-20:00</text>
+      <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市南开区</text></view>
+    </view>
+    <view class="list-tel">
+    <image src="/images/telephone.png" mode="heightFix" bindtap="callGroom"></image>
+  </view>
+  </navigator>
+  <view class="list-intro">简介：天津古文化街位于天津市南开区东北角东门外、海河西岸，系商业步行街，国家5A级旅游景区。作为津门十景之一，天津古文化街一直坚持“中国味，天津味，文化味，古味”经营特色，以经营文化用品为主。</view>
+  <view wx:if="{{gallery}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close">
+    <view class="weui-gallery__info">1/5</view>
+    <view class="weui-gallery__img__wrp">
+      <image mode="aspectFit" class="weui-gallery__img" src="http://p0.meituan.net/hoteltdc/43572d0c9c332139c5296bb6e79e8941_1_b8eb8f1aa8e3ef7a_1_/Yhl5UN79G/U1HyTTuXRVXJQPuUrPCWSoMbNCTQUUUIkPmKpHXPPfTNJG3So0jKU92OgKKauV45i2JwDo8jpRLf0ja2mSTDl7JAK+pWFOFwXbHw2TKN7jvIg8V+USnMn"></image>
+    </view>
+    <view class="weui-gallery__opr">
+      <view aria-role="button" aria-label="删除" class="weui-gallery__del">
+        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">盘山</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p0.meituan.net/hotel/eebb1541dd304e598dc19b4b06276f251100188.png@275w_156h_1e_1c" object-fit="fill" bindtap="open1" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+      <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAAA</text></text>
+      <text class="weui-media-box__title">人均：<text class="media-box__title2">222元</text></text>
+      <text class="weui-media-box__title">开放时间：08:00-18:00</text>
+      <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市蓟州区</text></view>
+    </view>
+    <view class="list-tel">
+    <image src="/images/telephone.png" mode="heightFix" bindtap="callGroom"></image>
+  </view>
+  </navigator>
+  <view class="list-intro">简介：盘山位于天津市蓟州区西北，为国家5A级景区。该景区始记于汉，兴于唐，极盛于清，是自然山水与名胜古迹并著，佛家文化与皇家文化共融的旅游休闲胜地。</view>
+  <view wx:if="{{gallery1}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close1">
+    <view class="weui-gallery__info">2/5</view>
+    <view class="weui-gallery__img__wrp">
+      <image mode="aspectFit" class="weui-gallery__img" src="https://p0.meituan.net/hotel/eebb1541dd304e598dc19b4b06276f251100188.png@275w_156h_1e_1c"></image>
+    </view>
+    <view class="weui-gallery__opr">
+      <view aria-role="button" aria-label="删除" class="weui-gallery__del">
+        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津之眼</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0609%252Fcc8bb5e3j00qufd2q00f5c000u000k4m.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656494110&t=6370ea0797b81812eef2001a0d3f7e1e" object-fit="fill" bindtap="open2" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+      <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+      <text class="weui-media-box__title">人均：<text class="media-box__title2">84元</text></text>
+      <text class="weui-media-box__title">开放时间：9:30-21:30</text>
+      <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市红桥区</text></view>
+    </view>
+    <view class="list-tel">
+    <image src="/images/telephone.png" mode="heightFix" bindtap="callGroom"></image>
+  </view>
+  </navigator>
+  <view class="list-intro">简介：“天津之眼”摩天轮，又称天津永乐桥摩天轮，位于天津市河北区李公祠大街与五马路交口的永乐桥上，跨海河连接河北区与红桥区，是一座跨河建设、桥轮合一的摩天轮，兼具观光和交通功用，是天津地标之一。于2008年4月22日基本完成安装建设；于2009年4月16日正式对外开放。</view>
+
+  <view wx:if="{{gallery2}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close2">
+    <view class="weui-gallery__info">3/5</view>
+    <view class="weui-gallery__img__wrp">
+      <image mode="aspectFit" class="weui-gallery__img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0609%252Fcc8bb5e3j00qufd2q00f5c000u000k4m.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656494110&t=6370ea0797b81812eef2001a0d3f7e1e"></image>
+    </view>
+    <view class="weui-gallery__opr">
+      <view aria-role="button" aria-label="删除" class="weui-gallery__del">
+        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">方特欢乐世界</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p0.meituan.net/travel/4687fa7d910be48490149512e318a3b3357773.png@275w_156h_1e_1c" object-fit="fill" bindtap="open3" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+      <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+      <text class="weui-media-box__title">人均：<text class="media-box__title2">393元</text></text>
+      <text class="weui-media-box__title">开放时间：9:30-17:30</text>
+      <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市滨海新区</text></view>
+    </view>
+    <view class="list-tel">
+    <image src="/images/telephone.png" mode="heightFix" bindtap="callGroom"></image>
+  </view>
+  </navigator>
+  <view class="list-intro">简介：方特欢乐世界是华强方特文化科技集团股份有限公司于2006年12月22日成立的品牌。方特欢乐世界是华强方特集团首个主题乐园，它是以科幻和互动体验为特色，采用国际一流的理念和技术精心打造的东方梦幻乐园。</view>
+
+  <view wx:if="{{gallery3}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close3">
+    <view class="weui-gallery__info">4/5</view>
+    <view class="weui-gallery__img__wrp">
+      <image mode="aspectFit" class="weui-gallery__img" src="https://p0.meituan.net/travel/4687fa7d910be48490149512e318a3b3357773.png@275w_156h_1e_1c"></image>
+    </view>
+    <view class="weui-gallery__opr">
+      <view aria-role="button" aria-label="删除" class="weui-gallery__del">
+        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="service-list">
+  <!--列表渲染 -->
+  <view class="service-title">天津欢乐谷</view>
+  <navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+    <view aria-hidden="true" class="weui-media-box__hd">
+      <image src="https://p1.meituan.net/tdctraveldark/3a26401a487c8840af164ae6e2f4bc814029566.jpg@275w_156h_1e_1c" object-fit="fill" bindtap="open4" class="service-image" mode="aspectFill"></image>
+    </view>
+    <view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+      <text class="weui-media-box__title">星级：<text class="media-box__title1">AAAA</text></text>
+      <text class="weui-media-box__title">人均：<text class="media-box__title2">316元</text></text>
+      <text class="weui-media-box__title">开放时间：08:30-21:30,17:00-21:30</text>
+      <view class="weui-media-box__title">地址：<text class="media-box__title3">天津市东丽区</text></view>
+    </view>
+    <view class="list-tel">
+    <image src="/images/telephone.png" mode="heightFix" bindtap="callGroom"></image>
+  </view>
+  </navigator>
+  <view class="list-intro">简介：天津欢乐谷主题公园占地面积35万平方米，坐落于天津市东丽湖畔。全园分为六大主题区：演艺中心、欢乐时光、海洋之心、维京海港、圣诞村、飞跃加勒比。</view>
+
+  <view wx:if="{{gallery4}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close4">
+    <view class="weui-gallery__info">5/5</view>
+    <view class="weui-gallery__img__wrp">
+      <image mode="aspectFit" class="weui-gallery__img" src="https://p1.meituan.net/tdctraveldark/3a26401a487c8840af164ae6e2f4bc814029566.jpg@275w_156h_1e_1c"></image>
+    </view>
+    <view class="weui-gallery__opr">
+      <view aria-role="button" aria-label="删除" class="weui-gallery__del">
+        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+      </view>
+    </view>
+  </view>
+</view>

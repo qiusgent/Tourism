@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "🧳消费预警",
+  "permission": {
+    "scope.userLocation": {
+        "desc": "请求获取地理信息"
+    }
+}
+}

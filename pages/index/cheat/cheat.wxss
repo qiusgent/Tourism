@@ -1,0 +1,30 @@
+.weui-search-bar{
+  background-color: #4f9cec;
+  padding: 15rpx 30rpx;
+}
+.weui-search-bar__form{
+  position: relative;
+  height: 64rpx ;
+  border-radius: 50rpx ;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+}
+.weui-cells {
+  margin-top: 0;
+}
+map{
+  width: 100vw;
+  height: 100vh;
+}
+.weui-search-bar .weui-icon-search {
+  margin-left: 43vh;
+}
+.weui-search-bar__input{
+  position: absolute;
+  font-size: small;
+  margin-top: -5.47%;
+  margin-left: 7%;
+}

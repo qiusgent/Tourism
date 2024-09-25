@@ -1,0 +1,37 @@
+.avatar > image {
+  margin: 2vh 2.5vh;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.avatar{
+  border-bottom:1rpx solid #c8c8c8 ;
+}
+.content{
+  width: 100vw;
+  position: fixed;
+}
+.content1{
+  display: flex;
+  flex-direction: row;
+}
+.school-picker{
+  margin-top:vh;
+  color:#b2b2b2;
+}
+.content .content1{
+  
+  font-size: 2vh;
+  border-bottom: 1rpx solid #c8c8c8;
+  /* border-radius: 10rpx; */
+  padding: 2vh 33rpx;   /*上下 左右 */
+  color: #000000;
+}
+.content .phcolor{
+  color: #b1b1b1;
+}
+.weui-btn_default, .weui-btn_default:not(.weui-btn_disabled):visited {
+  color: #fff;
+  background-color: #4f9cec;
+  margin-top: 62vh;
+}

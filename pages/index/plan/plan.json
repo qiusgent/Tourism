@@ -1,0 +1,9 @@
+
+{
+  "usingComponents": {
+    "selector-component": "plugin://citySelector/selector-component",
+    "mp-actionsheet": "../../../components/actionsheet/actionsheet",
+		"copy-dialog": "../../../components/copy-dialog/copy-dialog"
+	},
+	"navigationBarTitleText": "🧳出行规划"
+}

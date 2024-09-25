@@ -1,0 +1,80 @@
+<view class="page__bd">
+  <view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+    <form class="weui-search-bar__form" aria-role="combobox" aria-haspopup="true" aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}" aria-owns="searchResult">
+      <view class="weui-search-bar__box">
+        <i class="weui-icon-search"></i>
+        <input aria-controls="searchResult" type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput" style="margin-left: 17vh;"></view>
+      </view>
+    </form>
+  </view>
+  <view class="weui-cells searchbar-result">
+    <navigator url="/pages/scene/scene" class="weui-cell" hover-class="weui-cell_active" wx:if="{{inputVal==='眼'||inputVal==='天津'||inputVal==='之'||inputVal==='天津之眼'}}">
+      <view class="weui-cell__bd">
+        <view bindtap="handleHistoryTap">天津之眼</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:if="{{inputVal==='五'||inputVal==='五大道'||inputVal==='天津'||inputVal==='五大道文化旅游区'}}">
+      <view class="weui-cell__bd">
+        <view>五大道文化旅游区</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:if="{{inputVal==='解'||inputVal==='桥'||inputVal==='解放'||inputVal==='解放桥'}}">
+      <view class="weui-cell__bd">
+        <view>解放桥</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:if="{{inputVal==='种'||inputVal==='世纪'||inputVal==='钟表'||inputVal==='世纪钟'}}">
+      <view class="weui-cell__bd">
+        <view>世纪钟</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>那拉提旅游风景区</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>金丝峡景区</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>太行山大峡谷八泉峡景区</view>
+      </view>
+    </navigator>
+    <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <view>那拉提旅游风景区</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="search-wrap">
+  <view class="history-wrap">
+    <view class="search-header">
+      <text class="search-title">历史搜索</text>
+      <text class="search-clear" bindtap="handleClearHistory">清除</text>
+    </view>
+    <view class="search-content">
+      <view class="search-item" hover-class="hover-history-item" wx:for="{{historyWords}}" bindtap="handleHistoryTap" bindlongpress="deleteCurr" data-index="{{index}}" wx:key="index">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+  <view class="popular-wrap">
+    <view class="search-header">
+      <text class="search-title">热门搜索</text>
+    </view>
+    <view class="search-content">
+      <view class="search-item" hover-class="hover-history-item" wx:for="{{popularWords}}" data-index="{{index}}" wx:key="index" bindtap="handleHistoryTap">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+
+
+</view>

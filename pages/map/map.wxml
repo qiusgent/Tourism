@@ -1,0 +1,4 @@
+<!--pages/map/map.wxml-->
+<!-- <button bindtap="buttonTap">2</button> -->
+<!--   纬度                    经度                       标记;标记点           点击标记点时触发-->
+<map latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" bindmarkertap='markertap'></map>
